@@ -1,0 +1,22 @@
+Git 설치방법
+http://hoazzinews.tistroy.com/63
+
+
+로컬저장소만들기
+http://hoazzinews.tistroy.com/65
+
+
+저장소(Local Repo)에저장하기
+http://hoazzinews.tistroy.com/66
+
+
+다른 커밋으로 이동하기
+http://hoazzinews.tistroy.com/67
+
+
+Git Hub 가입하기
+http://hoazzinews.tistroy.com/71
+
+
+Git Hub에 Remote Repo 생성
+http://hoazzinews.tistroy.com/72
