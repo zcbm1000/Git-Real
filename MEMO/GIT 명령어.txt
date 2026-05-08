@@ -158,11 +158,18 @@ git hub 에서 추가내용 불러옴
 삭제 후 깃 클론으로 허브에서 따오는게 낫다
 작업내용을 붙여넣어서 복구함
 --------------------------------------------
-.gitignore 파일에
+.gitignore 파일에(뒤에 확장자가 있으면 안됨)
 doc.txt
 doc.txt는 관리대상에서 빠짐 git으로 등록이 안됨 add . 을 해도 올라가지않음
 
-주의사항은 텍스트파일로 .gitignore 뒤에 확장자가 붙으면안됨
+주의사항 .gitignore 안에 제거할 파일명은 확장자 포함해야함
+
+파일명
 .gitignore.txt   (X)
 .gitignore       (O)
+
+제거하고싶은 파일적을시
+removetest.txt (o)
+./removetest.txt(x)
+removetest(x)
 
