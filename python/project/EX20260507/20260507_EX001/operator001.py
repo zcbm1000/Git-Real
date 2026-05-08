@@ -6,14 +6,11 @@
 # num2 = 10
 # print(f'num1/num2 = {num1/num2}')
 
-# quiz 신체질량지수(BMI) 구하기
-# 몸무게와 신장을 입력하면 BMI를 계산 (몸무게/신장의 제곱)
 
-# weight = float(input('몸무게(kg): '))
-# height = float(input('신장(m): '))
 
-# BMI = weight / (height*height)
-# print(f'BMI: {BMI:.2f}')                 #  :.2f  소수점 2자리까지만 표기하는 용어
+
+
+                 #  :.2f  소수점 2자리까지만 표기하는 용어
 
 #--------- 나머지만(%)
 # print(10%2)
@@ -43,4 +40,3 @@
 # total = man ** date
 # print(f'{date} 일 이후 예상 감염자 수: {total}') 
 
-print(1000**0)
