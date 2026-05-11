@@ -163,6 +163,10 @@ doc.txt
 doc.txt는 관리대상에서 빠짐 git으로 등록이 안됨 add . 을 해도 올라가지않음
 
 주의사항 .gitignore 안에 제거할 파일명은 확장자 포함해야함
+이미 add된 파일은 "git remove --cached 파일명" 명령어로 제거가능
+
+
+
 
 파일명
 .gitignore.txt   (X)
@@ -173,3 +177,12 @@ removetest.txt (o)
 ./removetest.txt(x)
 removetest(x)
 
+
+
+example/
+
+example 이라는 폴더 자체를 무시함
+
+* .log
+
+log 확장자로 표기된사항 전부 무시
