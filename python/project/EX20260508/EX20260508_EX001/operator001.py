@@ -46,5 +46,3 @@
 # diurnalTemp = dayHigh - nightLow
 # print(f'일교차는 {diurnalTemp} 도 입니다')
 
-
-               
