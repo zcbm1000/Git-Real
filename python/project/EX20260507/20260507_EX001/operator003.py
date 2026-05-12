@@ -17,7 +17,6 @@
 # print(var1 & var2)
 
 
-
 # or(|) 연산자 
 # 피연산자중 하나 이상의 True가 존재할 경우 True, 피연산자중 전체가 False인 경우 False
 # var1 = True
