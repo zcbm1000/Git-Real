@@ -447,10 +447,10 @@ if ~ elif : 다중 선택
 
 
 
-useMsg = input('메시지를 입력하세요.')
-msgLen = len(useMsg)
+# useMsg = input('메시지를 입력하세요.')
+# msgLen = len(useMsg)
 
-if msgLen <= 50:
-    print('SMS 발송')
-else:
-    print('MMS 발송')
+# if msgLen <= 50:
+#     print('SMS 발송')
+# else:
+#     print('MMS 발송')
