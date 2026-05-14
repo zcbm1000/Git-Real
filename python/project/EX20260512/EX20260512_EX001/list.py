@@ -213,7 +213,7 @@ fruit = '수박' 이 되고 [사과, 포도, 메론]은 삭제됨
 # print(f'list2: {list2}')               # list2: [10, 20, 30]
 
 # list1.extend(list2)                    # list1에 list2를 붙임        | # lsit2는 저장이 그대로 유지됨
-# print(f'list1: {list1}')               # list1: [1, 2, 3, 10, 20, 30]
+# print(f'list1: {list1}')               # list1: [1, 2, 3, 10, 20, 30] # list 1은 데이터가 변형됨
 
 
 # list3 = list1 + list2                    # + 로하는 리스트 연결은 새로운 메모리 공간에 새로운 데이터가 생성됨
