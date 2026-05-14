@@ -113,13 +113,13 @@
 # print("5의 배수:", multiples_5)
 # print("3과 5의 공배수:", commonMultiples)
 
-# 9. 사용자가 입력한 숫자를 리스트에 저장하다가 입력종료 후 리스트 출력하기(도어락)
+# 9. 사용자가 입력한 숫자를 리스트에 저장하다가 입력종료 후 리스트 출력하기(도어락가능할지도.)
 
-inputNum = []
+# inputNum = []
 
-while True:
-    num = (input('숫자를 입력하세요 (종료: #):'))
-    if num == '#': 
-        break
-    inputNum.append(int(num))
-    print("입력한 숫자:", inputNum)
+# while True:
+#     num = (input('숫자를 입력하세요 (종료: #):'))
+#     if num == '#': 
+#         break
+#     inputNum.append(int(num))
+#     print("입력한 숫자:", inputNum)
