@@ -136,17 +136,22 @@ numbers = [1, 2, 3, 4, 5, 6]
 3번 연속 실패하면 잠금장치가 1분간 입력불가상태
 '''
 
-password = input('초기 비밀번호 설정:')
+password = input('초기 비밀번호 설정:') + '#'
+attempts = 0
+limit = 3
 while True:
 
-    num = (input('비밀번호를 입력하세요( 종료: #):'))
-    if num == '#':
-        break
-    if password == inputNum:
+    inputNum = (input('비밀번호를 입력하세요( 종료: #):'))
+    if inputNum == password:
         print('열림')
         break
     else: 
-        print('재시도')
+        attempts += 1
+        if limit > attempts:
+             print(f'{attempts}회 실패하셨습니다.재시도 하세요')
+        else:     
+            print(f'{attempts}회 실패로 종료합니다.')
+            break
 
 
 

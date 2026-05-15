@@ -65,53 +65,171 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 # print(type(listVar2[3][1]))          # type 은 int
 
 
-dicts ={
-    'name' : '박찬호',
-    'age'  : 20,
-    'addr' : '대전 중구',
-    'hobby': ['축구', '농구', '배구']
-}
-print(f'dicts: {dicts}')
-''' 출력하면 다음과 값이 같음 
-dicts: {'name': '박찬호', 'age': 20, 'addr': '대전 중구', 'hobby': ['축구', '농구', '배구']}
+# dicts ={
+#     'name' : '박찬호',
+#     'age'  : 20,
+#     'addr' : '대전 중구',
+#     'hobby': ['축구', '농구', '배구']
+# }
+# print(f'dicts: {dicts}')
+# ''' 출력하면 다음과 값이 같음 
+# dicts: {'name': '박찬호', 'age': 20, 'addr': '대전 중구', 'hobby': ['축구', '농구', '배구']}
+# '''
+
+# print(dicts['hobby'][1])       # ['축구', '농구', '배구'] 에 있는 인덱스 값 1을 출력  | 농구 출력
+
+
+
+# 딕셔너리 조회/삽입/수정/삭제
+# 컴퓨터 프로그램에서 "CRUD" 라고 부름
+# "CRUD" 라는 용어는 개발자의 필수요소
+# "CRUD" 는 프로그래밍 뿐만 아니라 데이터 베이스에서도 사용되는 용어
+'''
+   C: Creative(생성)
+   R: Read(조회)
+   U: update(수정)
+   D: Delete(삭제)
 '''
 
-print(dicts['hobby'][1])       # ['축구', '농구', '배구'] 에 있는 인덱스 값 1을 출력  | 농구 출력
+# # CRUD C: Creative(추가)
+
+# dicContainer ={
+#     '이름'  : '홍길동',
+#     '나이'  : 25,
+#     '주소'  : '대전 중구',
+#     '취미'  : ['축구','수영','조깅'],
+#     '몸무게': 87.5
+# }
+
+# print(f'dicContaner: {dicContainer}')            
+
+# # 데이터 추가 방법
+# # dicContainver[키] = 밸류
+
+# dicContainer['연락처'] = '010-1111-2222'
+# print(f'dicContaner: {dicContainer}')                 # 출력 → dicContainer 에서 연락처가 추가된 채로 출력 
+
+
+# # CRUD R: Read(조회)
+
+# print(f'이름: {dicContainer['이름']}')                # 출력 → 이름: 홍길동
+
+
+# # CRUD U: Update(수정)
+
+# dicContainer['몸무게'] = 60
+# print(f'수정 된 몸무게: {dicContainer['몸무게']}')    # 출력 → 수정 된 몸무게: 60
+
+
+# # CRUD D: Delet(삭제)
+
+# del dicContainer['몸무게']  
+# print(f'dicContaner: {dicContainer}')                # 출력 → dicContainer 에서 몸무개가 삭제된 채로 출력 
+       
+
+# # 아이템 갯수 조회
+#                                                       # 이름, 나이, 주소, 취미, 연락처 키의 갯수를 파악
+# print(f'아이템 갯수: {len(dicContainer)}개')          # 출력 → 아이템 갯수: 5개
+
+
+# # 전체키 조회 
+# dicKeys = dicContainer.keys()                        # dicKeys = dicContainer 의 키 값만 할당 
+# print(f'dicKeys: {dicKeys}')                         # 출력 → dicKeys: dict_keys(['이름', '나이', '주소', '취미', '연락처'])
+
+# for key in dicKeys:
+#     print(f'{key} : {dicContainer[key]}')
+
+
+# # 밸류 조회
+# dicValues = dicContainer.values()
+# print(f'dicValues: {dicValues}')
+
+
+# # 키값과 밸류를 한번에 조회
+# for key, value in dicContainer.items():
+#     print(f'{key}: {value}')
 
 
 
 
+# Quiz) 중간고사 성적 관리 프로그램 만들기
+'''
+아래 시나리오를 기반으로 딕셔너리를 이용해서 중간고사 성적 관리 프로그램을 만들어봅시다.
+ -1 : 중간고사의 성적(C/C++은 A, Java는 B+, 모바일은 C, 보안은 A+, 해킹은 F, 시스템은 C+)을 저장하는 
+      딕셔너리를 만든다.
+ -2 : 'Java'와 '시스템' 과목의 성적을 조회한다.
+ -3 : 추가로 2과목의 성적(파이썬은 A, OS는 A+)을 삽입한다.
+ -4 : 'Java'와 '시스템'의 성적을 각각 'F'와 'A'로 수정한다.
+ -5 : 전체 과목과 성적을 조회하여 최종 성적표를 출력한다.
+'''
 
 
+scores = {
+    'C/C++' :'A',
+    'JAVA'  :'B+',
+    '모바일':'C',
+    '보안'  :'A+',
+    '해킹'  :'F',
+    '시스템':'C+'
+}
+
+# # 2 'java'와'시스템의 키값 조회'
+# print(f' java : {scores['JAVA']}')
+# print(f'시스템: {scores['시스템']}')
+
+# # 3 추가로 2과목의 성적(파이썬은 A, OS는 A+)을 삽입
+# scores['파이썬'] = 'A'
+# scores['OS'] = 'A+'
+# print(f'scores: {scores}')
+
+# # 4 'Java'와 '시스템'의 성적을 각각 'F'와 'A'로 수정
+# scores['JAVA'] = 'F'
+# scores['시스템'] = 'A'
+# print(f'scores: {scores}')
 
 
+# # 5 전체 과목과 성적을 조회하여 최종 성적표를 출력한다.
+# for key in scores.keys():
+#     print(f'{key}:\t{scores[key]}')
+
+'''
+A+  = 4.5
+A   = 4.0
+B+  = 3.5
+B   = 3.0
+C+  = 2.5
+C   = 2.0
+F   = 0
+
+C/C++ : A     | 4.0          
+JAVA  : F     | 0       
+모바일: C     | 2.5      
+보안  : A+    | 4.5          
+해킹  : F     | 0          
+시스템: A     | 4.0          
+파이썬: A     | 4.0          
+OS    : A+    | 4.5          
+
+'''
+creditsScores = {
+    'A+': 4.5,
+    'A' : 4.0,
+    'B+': 3.5,
+    'B' : 3.0,
+    'C+': 2.5,
+    'C' : 2.0,
+    'F' : 0 
+}
+totalScore = 0
+average = 0
+for key in scores.keys():
+    totalScore += creditsScores[scores[key]]
+    print(f'{key}: {scores[key]}')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f'totalScore: {totalScore}')
+average = totalScore / len(scores)
+print(f'average: {average}')
 
 
 
