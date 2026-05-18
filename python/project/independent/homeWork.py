@@ -45,7 +45,7 @@
 
 # # 3. 리스트에 있는 숫자 중 짝수만 출력하기 [1,2,3,4,5,6]
 
-numbers = [1, 2, 3, 4, 5, 6]
+# numbers = [1, 2, 3, 4, 5, 6]
 
 # for evens in numbers:
 #     if evens % 2==0:
@@ -147,8 +147,8 @@ while True:
         break
     else: 
         attempts += 1
-        if limit > attempts:
-             print(f'{attempts}회 실패하셨습니다.재시도 하세요')
+        if limit > attempts:            
+            print(f'{attempts}회 실패하셨습니다.재시도 하세요')
         else:     
             print(f'{attempts}회 실패로 종료합니다.')
             break

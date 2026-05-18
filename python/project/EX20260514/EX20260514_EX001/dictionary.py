@@ -21,7 +21,7 @@
 # 밸류 값은 상관 없음.
 
 # #      |   키   밸류 |   키   밸류 |   키   밸류 |   키   밸류 |  키   밸류 |
-ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박지성': 50}
+# ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박지성': 50}
 # print(f'ages: {ages}')
 # print(f'ages type: {type(ages)}')
 
@@ -86,26 +86,28 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 # "CRUD" 는 프로그래밍 뿐만 아니라 데이터 베이스에서도 사용되는 용어
 '''
    C: Creative(생성)
-   R: Read(조회)
-   U: update(수정)
-   D: Delete(삭제)
+   R: Read    (조회)
+   U: update  (수정)
+   D: Delete  (삭제)
 '''
 
-# # CRUD C: Creative(추가)
 
-# dicContainer ={
-#     '이름'  : '홍길동',
-#     '나이'  : 25,
-#     '주소'  : '대전 중구',
-#     '취미'  : ['축구','수영','조깅'],
-#     '몸무게': 87.5
-# }
+dicContainer ={
+     '이름'  : '홍길동',
+     '나이'  : 25,
+     '주소'  : '대전 중구',
+     '취미'  : ['축구','수영','조깅'],
+     '몸무게': 87.5
+}
+
+
+# # CRUD C: Creative(추가)
 
 # print(f'dicContaner: {dicContainer}')            
 
 # # 데이터 추가 방법
 # # dicContainver[키] = 밸류
-
+                     
 # dicContainer['연락처'] = '010-1111-2222'
 # print(f'dicContaner: {dicContainer}')                 # 출력 → dicContainer 에서 연락처가 추가된 채로 출력 
 
@@ -113,7 +115,7 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 # # CRUD R: Read(조회)
 
 # print(f'이름: {dicContainer['이름']}')                # 출력 → 이름: 홍길동
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 # # CRUD U: Update(수정)
 
@@ -132,7 +134,7 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 # print(f'아이템 갯수: {len(dicContainer)}개')          # 출력 → 아이템 갯수: 5개
 
 
-# # 전체키 조회 
+# # 전체키 조회                                        # 타입은 dict_keys
 # dicKeys = dicContainer.keys()                        # dicKeys = dicContainer 의 키 값만 할당 
 # print(f'dicKeys: {dicKeys}')                         # 출력 → dicKeys: dict_keys(['이름', '나이', '주소', '취미', '연락처'])
 
@@ -140,7 +142,7 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 #     print(f'{key} : {dicContainer[key]}')
 
 
-# # 밸류 조회
+# # 밸류 조회                                          # 타입은 dict_values
 # dicValues = dicContainer.values()
 # print(f'dicValues: {dicValues}')
 
@@ -149,7 +151,13 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 # for key, value in dicContainer.items():
 #     print(f'{key}: {value}')
 
+# items = dicContainer.items()
+# print(f'items: {items}')
 
+
+# for item in items:
+#    print(f'item: {item}')
+#    print(f'item[0], item[1]: {item[0]}, {item[1]}')
 
 
 # Quiz) 중간고사 성적 관리 프로그램 만들기
@@ -164,14 +172,14 @@ ages = {'박찬호': 48, '박지성': 40, '박세리': 50, '이승열': 43, '박
 '''
 
 
-scores = {
-    'C/C++' :'A',
-    'JAVA'  :'B+',
-    '모바일':'C',
-    '보안'  :'A+',
-    '해킹'  :'F',
-    '시스템':'C+'
-}
+# scores = {
+#     'C/C++' :'A',
+#     'JAVA'  :'B+',
+#     '모바일':'C',
+#     '보안'  :'A+',
+#     '해킹'  :'F',
+#     '시스템':'C+'
+# }
 
 # # 2 'java'와'시스템의 키값 조회'
 # print(f' java : {scores['JAVA']}')
@@ -210,26 +218,27 @@ JAVA  : F     | 0
 파이썬: A     | 4.0          
 OS    : A+    | 4.5          
 
-'''
-creditsScores = {
-    'A+': 4.5,
-    'A' : 4.0,
-    'B+': 3.5,
-    'B' : 3.0,
-    'C+': 2.5,
-    'C' : 2.0,
-    'F' : 0 
-}
-totalScore = 0
-average = 0
-for key in scores.keys():
-    totalScore += creditsScores[scores[key]]
-    print(f'{key}: {scores[key]}')
+# '''
+
+# creditsScores = {
+#     'A+': 4.5,
+#     'A' : 4.0,
+#     'B+': 3.5,
+#     'B' : 3.0,
+#     'C+': 2.5,
+#     'C' : 2.0,
+#     'F' : 0 
+# }
+# totalScore = 0
+# average = 0
+# for key in scores.keys():
+#     totalScore += creditsScores[scores[key]]
+#     print(f'{key}: {scores[key]}')
 
 
-print(f'totalScore: {totalScore}')
-average = totalScore / len(scores)
-print(f'average: {average}')
+# print(f'totalScore: {totalScore}')
+# average = totalScore / len(scores)
+# print(f'average: {average}')
 
 
 
